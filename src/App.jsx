@@ -3,12 +3,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // import pages
 import Home from './pages/Home';
+import AddProduct from './pages/AddProduct';
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/add-product' element={<AddProduct />} />
       </Routes>
     </BrowserRouter>
   )
